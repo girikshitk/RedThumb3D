@@ -478,8 +478,7 @@ a, button, .card, .logo-container, .back-arrow {
   gap: 1rem;
 }
 
-.canvas-container {
-...
+.slide-in-left {
   opacity: 0;
   transform: translateX(-100px);
 }
