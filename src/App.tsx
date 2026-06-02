@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 
+import logo from './assets/logo.png';
+
 // Importing assets using Vite's glob import
 const dioramaImages = import.meta.glob('./assets/products/Diorama/*.{png,jpg,jpeg,svg}', { eager: true });
 const heroImages = import.meta.glob('./assets/products/HeroFigures/*.{png,jpg,jpeg,svg}', { eager: true });
@@ -269,7 +271,7 @@ const App: React.FC = () => {
       {/* GLASSMORPHISM NAVBAR */}
       <nav className="navbar">
         <div className="nav-logo" onClick={scrollToTop}>
-          <img src="/logo.png" alt="RedThumb3D Logo" />
+          <img src={logo} alt="RedThumb3D Logo" />
         </div>
         <div className="nav-actions">
           <a href="#" className="email-btn" onClick={(e) => { e.preventDefault(); handleEmailRedirect(); }}>
