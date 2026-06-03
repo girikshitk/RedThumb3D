@@ -134,7 +134,7 @@ h1, h2, h3 {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 1280px;
   height: 100vh;
   background: var(--black);
   z-index: 2000;
@@ -218,19 +218,6 @@ h1, h2, h3 {
   font-weight: 900;
 }
 
-@media (max-width: 1024px) {
-  .modal-content {
-    grid-template-columns: 1fr;
-    display: block;
-  }
-  .modal-image-container {
-    height: 50vh;
-    margin-bottom: 2rem;
-  }
-  .comparison-grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 .brutal-border {
   border: 4px solid var(--stark-white);
@@ -248,7 +235,7 @@ h1, h2, h3 {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 1280px;
   height: 100vh;
   z-index: -1;
   pointer-events: none;
@@ -528,8 +515,3 @@ a, button, .card, .logo-container, .back-arrow {
   to { transform: translateX(-50%); }
 }
 
-@media (max-width: 768px) {
-  .massive-text {
-    font-size: clamp(2.5rem, 15vw, 6rem);
-  }
-}
