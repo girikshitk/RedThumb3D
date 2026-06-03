@@ -18,16 +18,18 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: auto; /* Handle smooth scroll via JS for bezier curves */
+html, body {
+  width: 1280px;
+  min-width: 1280px;
+  margin: 0;
+  padding: 0;
+  overflow-x: visible;
 }
 
 body {
   background-color: var(--black);
   color: var(--stark-white);
   font-family: var(--font-main);
-  overflow-x: hidden;
-  width: 100%;
 }
 
 h1, h2, h3 {
@@ -66,12 +68,17 @@ h1, h2, h3 {
 
 /* Back button styling fixed */
 
+#root {
+  min-width: 1280px;
+  width: 1280px;
+}
+
 /* Glassmorphism Navbar */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 1280px;
   height: 80px;
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(15px);

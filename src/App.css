@@ -1,5 +1,6 @@
 /* App.css can be empty or used for specific component overrides */
 .app {
+  width: 1280px;
   min-width: 1280px;
-  overflow-x: hidden;
+  overflow-x: visible;
 }
