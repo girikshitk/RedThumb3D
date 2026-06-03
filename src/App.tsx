@@ -240,7 +240,7 @@ const App: React.FC = () => {
   const WhyUsContent = () => (
     <div className="comparison-grid">
       <div className="comparison-card" style={{ background: 'var(--stark-white)', color: 'var(--black)' }}>
-        <h2 className="massive-text" style={{ fontSize: 'clamp(2rem, 8vw, 6rem)', marginBottom: '2rem' }}>
+        <h2 className="massive-text" style={{ fontSize: '6rem', marginBottom: '2rem' }}>
           <AnimatedText text="IMPORTING" /><br/>
           <span style={{ fontSize: '0.7em', display: 'block', whiteSpace: 'nowrap' }}>
             <AnimatedText text="FROM CHINA" delayOffset={0.5} />
@@ -251,7 +251,7 @@ const App: React.FC = () => {
         <div className="comparison-item"><span>Risk</span> <span>High</span></div>
       </div>
       <div className="comparison-card" style={{ background: 'var(--acid-green)', color: 'var(--black)' }}>
-        <h2 className="massive-text" style={{ fontSize: 'clamp(2rem, 8vw, 6rem)', marginBottom: '2rem' }}>
+        <h2 className="massive-text" style={{ fontSize: '6rem', marginBottom: '2rem' }}>
           <AnimatedText text="REDTHUMB" /><br/>
           <AnimatedText text="3D" delayOffset={0.4} />
         </h2>
@@ -292,8 +292,8 @@ const App: React.FC = () => {
               <img src={selectedProduct.src} alt={selectedProduct.name} />
             </div>
             <div className="modal-info">
-              <h1 className="massive-text acid-text" style={{ fontSize: 'clamp(2rem, 10vw, 8rem)' }}>{selectedProduct.name}</h1>
-              <p className="massive-text" style={{ fontSize: 'clamp(1.5rem, 5vw, 4rem)', color: 'var(--stark-white)', marginBottom: '2rem' }}>
+              <h1 className="massive-text acid-text" style={{ fontSize: '8rem' }}>{selectedProduct.name}</h1>
+              <p className="massive-text" style={{ fontSize: '4rem', color: 'var(--stark-white)', marginBottom: '2rem' }}>
                 {selectedProduct.size}
               </p>
               
@@ -339,7 +339,7 @@ const App: React.FC = () => {
               </div>
             </div>
 
-            <h2 className="massive-text acid-text" style={{ fontSize: 'clamp(2rem, 8vw, 6rem)', marginBottom: '3rem' }}>Custom Order</h2>
+            <h2 className="massive-text acid-text" style={{ fontSize: '6rem', marginBottom: '3rem' }}>Custom Order</h2>
 
             <input 
               className="brutal-input" 
@@ -413,7 +413,7 @@ const App: React.FC = () => {
 
       {/* HERO */}
       <header className="brutal-border" style={{ padding: '12rem 2rem 4rem', textAlign: 'center' }}>
-        <h1 id="hero-main-title" className="massive-text acid-text" style={{ fontSize: 'clamp(3.6rem, 22.5vw, 27rem)', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <h1 id="hero-main-title" className="massive-text acid-text" style={{ fontSize: '27rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <span><AnimatedText text="RED" canHover={true} /></span>
           <span><AnimatedText text="THUMB" delayOffset={0.2} canHover={true} /></span>
         </h1>
@@ -438,7 +438,7 @@ const App: React.FC = () => {
       {categories.map((cat) => (
         <section key={cat.title}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '2rem' }}>
-            <h2 className="massive-text acid-text" style={{ fontSize: cat.multiLine ? 'clamp(3rem, 15vw, 12rem)' : 'clamp(2rem, 10vw, 8rem)' }}>
+            <h2 className="massive-text acid-text" style={{ fontSize: cat.multiLine ? '12rem' : '8rem' }}>
               <AnimatedText text={cat.title.toUpperCase()} isMultiLine={cat.multiLine} />
             </h2>
             <span style={{ fontSize: '2rem', fontWeight: '900', color: 'var(--deep-red)' }}>{cat.size}</span>
@@ -475,12 +475,12 @@ const App: React.FC = () => {
 
       {/* FOOTER */}
       <footer ref={footerRef} className="brutal-border" style={{ padding: '6rem 2rem', background: 'var(--deep-red)', color: 'white', textAlign: 'center' }}>
-        <h2 className="massive-text" style={{ fontSize: 'clamp(3rem, 12vw, 12rem)' }}>Order Now</h2>
+        <h2 className="massive-text" style={{ fontSize: '12rem' }}>Order Now</h2>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', marginTop: '4rem' }}>
-          <a href="tel:+918920153740" style={{ fontSize: 'clamp(2rem, 8vw, 5rem)', fontWeight: '900', color: 'white', textDecoration: 'none', borderBottom: '8px solid white' }}>
+          <a href="tel:+918920153740" style={{ fontSize: '5rem', fontWeight: '900', color: 'white', textDecoration: 'none', borderBottom: '8px solid white' }}>
             +91 8920153740
           </a>
-          <a href="tel:+919818479359" style={{ fontSize: 'clamp(2rem, 8vw, 5rem)', fontWeight: '900', color: 'white', textDecoration: 'none', borderBottom: '8px solid white' }}>
+          <a href="tel:+919818479359" style={{ fontSize: '5rem', fontWeight: '900', color: 'white', textDecoration: 'none', borderBottom: '8px solid white' }}>
             +91 9818479359
           </a>
         </div>

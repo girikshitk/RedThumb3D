@@ -13,7 +13,7 @@ const ParticleBackground: React.FC = () => {
     let animationFrameId: number;
 
     const resize = () => {
-      canvas.width = window.innerWidth;
+      canvas.width = 1280;
       canvas.height = window.innerHeight;
     };
 
